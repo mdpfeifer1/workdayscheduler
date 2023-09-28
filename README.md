@@ -14,7 +14,7 @@
 - [License](#license)
 
 ## Usage
-(![Project](./imgs/127.0.0.1_5500_index.html%20(3).png))
+(![Project]))
 
 ## Credits
 
