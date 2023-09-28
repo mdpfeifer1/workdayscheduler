@@ -1,5 +1,5 @@
 
- var today = day.js(); 
+ var today = dayjs(); 
 
  // Wrap all code that interacts with the DOM in a call to jQuery to ensure that
 // the code isn't run until the browser has finished rendering all the elements
@@ -8,7 +8,7 @@
 // we are appending text to p tag, call to day.js formating into month day year,
  $(document).ready(function() {
   $("#currentDay").text(today.format("MMM D, YYYY hh:mm"));
-  var currentTime = day.js().hour();
+  var currentTime = dayjs().hour();
   console.log(currentTime);
 });
  
