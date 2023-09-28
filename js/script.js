@@ -29,9 +29,24 @@ var button = $('.saveBtn');
         // Utilizies the localStorage user inputs 
         // Gets ready to display them 
         displayToPage();
-
   }) 
- 
+
+  
+    displayToPage(); 
+
+    // declaring function displayToPage
+    function displayToPage(){
+      // Loop through index (hours) checking to see if < 18 (5PM) 
+        for (var index = 9; index < 18; index++) {
+          // getting index value from localStorage
+          var gettingIndex = localStorage.getItem(index);
+          // targeting each hour by it's id  
+          // then capturing the text the user inputs
+          // refining that selection
+          // based on current index value of textarea
+          $("#" + index + "").text(gettingIndex); 
+        }
+    }
 
   // TODO: Add a listener for click events on the save button. This code should
   // use the id in the containing time-block as a key to save the user input in
