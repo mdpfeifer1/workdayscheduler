@@ -4,6 +4,10 @@
 
 ## Description 
 
+-Utilizing DayJs to import time 
+-implementing localStorage.
+-User interactive calendar that saves daily events
+
 -
 
 
@@ -14,7 +18,7 @@
 - [License](#license)
 
 ## Usage
-(![Project]))
+(![Project](./assets/127.0.0.1_5500_index.html%20(3).png))
 
 ## Credits
 
