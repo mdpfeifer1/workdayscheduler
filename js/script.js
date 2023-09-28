@@ -11,6 +11,26 @@
   var currentTime = dayjs().hour();
   console.log(currentTime);
 });
+
+// Pairing button to TEXTAREA, then storing in localStorage
+// targeting class of save button inside html
+var button = $('.saveBtn'); 
+// event listener for jquery
+  button.on('click', function (event) {
+    // cancels the event if it's cancellable 
+    event.preventDefault();
+    // applying attribute to the id when clicked
+      var buttonId = $(this).attr("id");
+      // it's referencing the id that is in the same div as
+      // our button, it's grabbing the text the user puts
+      // in the textarea
+        var textAreaField = $(this).siblings(".description").val();
+        localStorage.setItem(buttonId, textAreaField);
+        // Utilizies the localStorage user inputs 
+        // Gets ready to display them 
+        displayToPage();
+
+  }) 
  
 
   // TODO: Add a listener for click events on the save button. This code should
