@@ -8,7 +8,6 @@
 -implementing localStorage.
 -User interactive calendar that saves daily events
 
--
 
 
 ## Table of Contents 
